@@ -1,0 +1,190 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #F0E3CA;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: #FF8303;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-btn, .dropdown-content button{
+    background-color: #d46a00;  
+    padding: 10px;
+    margin: 7px;
+    color:#1B1A17; 
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+}
+
+.dropdown-content {
+    background-color: #1B1A17;
+    display : none;
+    position: absolute;
+    left: 103px;
+    width: 135px;
+    margin-top: -45px;
+}
+ 
+.dropdown-btn:hover {
+    background-color :#1B1A17;
+    color: #d46a00;
+    transition: all ease-in-out .2s;
+}
+
+.dropdown-btn:hover + .dropdown-content {
+    display: block;
+}
+
+.dropdown-content:hover {
+    display: block;
+}
+
+.switch-btn {
+    background-color: #1B1A17;
+    color: #FF8303;
+    border: 0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    font-size: 32px;
+    transition: all ease-in-out .2s;
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+}
+
+.switch-btn:hover {
+    filter: brightness(80%);
+}
+
+.main-content {
+    margin-left: 140px;
+}
+
+.main-content p {
+    font-size: 24px;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 600px) {
+    .dropdown-btn,  .dropdown-content button {
+        font-size: 14px;
+    }
+
+    .dropdown-content {
+        left: 99px;
+        margin-top: -43.5px;
+        width: 115px;
+    }
+
+    .main-content p {
+        font-size: 20px;
+    }
+}
+
+
+/* TOP NAVITATION */
+.top-main-navigation {
+    flex-direction: row;
+    bottom: auto;
+    right: 0;
+    justify-content: space-between;
+}
+
+.top-nav-links {
+    flex-direction: row;
+    margin-right: 180px;
+    margin-top: 8px;
+}
+
+.top-nav-title {
+    margin-left: 140px;
+}
+
+.top-switch-btn {
+    left: auto;
+    right: 140px;
+}
+
+.top-main-content {
+    margin-top: 80px;
+    margin-right: 140px;
+}
+
+.top-dropdown-content {
+    left: auto;
+    top: 95px;
+    width: 101px;
+    margin-left: 7px;
+}
+
+.top-dropdown-content button {
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN FOR TOP NAVIGATION*/ 
+@media screen and (max-width: 600px) {
+    .top-nav-links {
+        margin-right: 0;
+        padding-top: 40px;
+    }
+
+    .top-nav-links .dropdown-btn,  .top-nav-links .dropdown-content button {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .top-main-navigation {
+        flex-direction: column;
+    }
+
+    .top-nav-title, .top-main-content {
+        margin-left: 0;
+    }
+
+    .top-dropdown-content {
+        top: 165px;
+        width: 61px;
+    }
+
+    .top-dropdown-content button {
+        margin-left: 3px;
+        margin-right: 3px;
+        padding-left: 0px !important; 
+        padding-right: 0px !important;
+    }
+
+    .top-main-content {
+        margin-right: 10px;
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+
+    .top-nav-title h2 {
+        margin-bottom: 0px;
+    }
+
+    .top-switch-btn {
+        left: auto;
+        right: auto;
+        top: 55px;
+        margin-left: -15px;
+    }
+
+    
+}
